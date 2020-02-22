@@ -30,8 +30,8 @@ export default props => {
 
                         <div className="input-group-append">
                             <IconButton style={todo.done ? "success" : "warning"} icon={todo.done ? 'check-double' : 'check'} onClick={() => props.handleMarkAsDone(todo)} />
-                            <IconButton style={editionId != todo._id ? 'primary' : 'success'} icon="pencil-alt" onClick={() => { setEdition(todo._id); }} />
-                            <IconButton style="danger" icon="trash-alt" hide={!todo.done} onClick={() => props.handleRemove(todo)} />
+                            <IconButton style={editionId !== todo._id ? 'primary' : 'success'} icon="pencil-alt" onClick={() => { setEdition(todo._id); }} />
+                            <IconButton style={"danger"} icon="trash-alt" hide={!todo.done} onClick={() => props.handleRemove(todo)} />
                         </div></div>
                 </td>
             </tr>

@@ -17,10 +17,10 @@ export default props => {
 
 
     return (<React.Fragment>
-        <If test={!(props.edition_id == props.item._id)}>
+        <If test={!(props.edition_id === props.item._id)}>
             <SpanList setEditionIdOnClick={props.setEditionIdOnClick} todo={props.item}> </SpanList>
         </If>
-        <If test={props.edition_id == props.item._id}>
+        <If test={props.edition_id === props.item._id}>
             <div className="input-group col-sm-6 ">
 
                 <CustomInput onChange={handleChange} value={description} />
