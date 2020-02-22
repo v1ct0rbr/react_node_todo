@@ -1,0 +1,23 @@
+/* body {
+    font: 16px/1 sans-serif
+}
+ */
+
+
+/* button.btn {
+    margin-right: 5px;
+}
+
+button.btn-outline-secondary {
+    margin-right: 0px;
+} */
+
+.content-wrapper,
+footer,
+nav {
+    margin-left: 0 !important;
+}
+
+footer {
+    vertical-align: bottom !important;
+}
